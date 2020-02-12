@@ -1,12 +1,40 @@
 {
-  "name": "chessx-homework",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "chessx-homework",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start:server": "npx nodemon server/server.js -w server",
+        "start:application": "webpack-dev-server"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "4.17.1",
+        "mysql": "2.18.1",
+        "react": "16.12.0",
+        "react-dom": "16.12.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.8.4",
+        "@babel/core": "7.8.4",
+        "@babel/plugin-transform-async-to-generator": "7.8.3",
+        "@babel/polyfill": "7.8.3",
+        "@babel/preset-env": "7.8.4",
+        "@babel/preset-react": "7.8.3",
+        "babel-loader": "8.0.6",
+        "babel-plugin-styled-components": "1.10.7",
+        "cors": "2.8.5",
+        "eslint": "6.8.0",
+        "html-webpack-plugin": "3.2.0",
+        "prettier": "1.19.1",
+        "prop-types": "15.7.2",
+        "react-hot-loader": "4.12.19",
+        "react-router-dom": "5.1.2",
+        "styled-components": "5.0.1",
+        "webpack": "4.41.6",
+        "webpack-cli": "3.3.11",
+        "webpack-dev-server": "3.10.3"
+    }
 }
